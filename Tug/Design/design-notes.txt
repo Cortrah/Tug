@@ -1,0 +1,65 @@
+-----------------------
+State Data Structure
+-----------------------
+Rope {
+    StartPt {
+        Pt{x:0,y:0},
+    }
+    GrabPt {
+        Pt{x:0,y:0},
+        Grip,
+        Tension,
+    }
+    LeftBoundPt{
+        Pt{x:0,y:0},
+    }
+    GrabPt {
+        Pt{x:0,y:0},
+        Grip,
+        Tension,
+    }
+    GrabPt {
+        Pt{x:0,y:0},
+        Grip,
+        Tension,
+    }
+    PrizePt {
+        Pt{x:0,y:0},
+        Prize {
+            id:0,
+            name:"Bone",
+            img:"bone.png",
+        }
+    }
+    GrabPt {
+        Pt{x:0,y:0},
+        Grip,
+        Tension,
+    }
+    GrabPt {
+        Pt{x:0,y:0},
+        Grip,
+        Tension,
+    }
+    RightBoundPt{
+        Pt{x:0,y:0},
+    }
+    GrabPt {
+        Pt{x:0,y:0},
+        Grip,
+        Tension,
+    }
+    EndPt {
+        Pt{x:0,y:0},
+    }
+}
+
+-----------------------
+Game Events
+-----------------------
+StartGame
+W1 Grab
+W2 Grab
+W1 MoveLeft
+W2 MoveRight
+
