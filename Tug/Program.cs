@@ -1,9 +1,11 @@
 using Microsoft.AspNetCore.Components.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using SignalRWebpack.Hubs;
 using Tug.Components;
 using Tug.Components.Account;
 using Tug.Data;
+using Tug.Hubs;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -49,7 +51,7 @@ else {
 }
 
 app.UseHttpsRedirection();
-
+app.UseDefaultFiles();
 app.UseStaticFiles();
 app.UseAntiforgery();
 
@@ -58,5 +60,7 @@ app.MapRazorComponents<App>()
 
 // Add additional endpoints required by the Identity /Account Razor components.
 app.MapAdditionalIdentityEndpoints();
+
+app.MapHub<TugHub>("/hub")
 
 app.Run();

@@ -17,12 +17,20 @@
         <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="8.0.0"/>
         <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="8.0.0"/>
         <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.0"/>
+        <PackageReference Include="Microsoft.TypeScript.MSBuild" Version="5.3.3">
+          <PrivateAssets>all</PrivateAssets>
+          <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+        </PackageReference>
     </ItemGroup>
 
     <ItemGroup>
       <Content Include="..\.dockerignore">
         <Link>.dockerignore</Link>
       </Content>
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="anim\rope\" />
     </ItemGroup>
 
 </Project>
